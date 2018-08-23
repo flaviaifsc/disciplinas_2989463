@@ -1,6 +1,9 @@
+    <h1>Disciplinas</h1>
     <ul>
     @foreach ($disciplinas as $disciplina)
-        <li>Título: {{ $disciplina->titulo }} </li>
-        <li>Ementa: {{ $disciplina->ementa }} </li><br>
+        <li><a href="/disciplinas/{{ $disciplina->id }}">
+                {{ $disciplina->titulo }} 
+            </a> </li>
+    <br>
     @endforeach
     </ul>
