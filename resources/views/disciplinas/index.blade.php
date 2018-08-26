@@ -5,6 +5,6 @@
         <li><a href="/disciplinas/{{ $disciplina->id }}">
                 {{ $disciplina->titulo }} 
             </a> </li>
-    <br>
+    <a href="/disciplinas/{{ $disciplina->id }}/edit"> Editar </a>
     @endforeach
     </ul>
