@@ -5,6 +5,7 @@
         <li><a href="/disciplinas/{{ $disciplina->id }}">
                 {{ $disciplina->titulo }} 
             </a> </li>
+
     <br>
     <a href="/disciplinas/{{ $disciplina->id }}/edit"> Editar </a>
     <form method="POST" action="/disciplinas/{{ $disciplina->id }}">
@@ -12,5 +13,8 @@
         {{ method_field('delete') }}
         <button type="submit">Apagar</button>
     </form>
+
+    <a href="/disciplinas/{{ $disciplina->id }}/edit"> Editar </a>
+
     @endforeach
     </ul>
