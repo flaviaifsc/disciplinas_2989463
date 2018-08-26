@@ -109,5 +109,10 @@ class DisciplinaController extends Controller
         $turma->disciplina_id = $request->disciplina_id;
         Disciplina::find($disciplina_id)->turmas()->save($turma);
         return redirect("/disciplinas/$disciplina_id");
-    }    
+    } 
+ 
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['index','show']);
+    }   
 }

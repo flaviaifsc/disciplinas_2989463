@@ -1,3 +1,4 @@
+@extends('layouts.master')
 <form method="POST" action="/disciplinas">
         {{ csrf_field() }}
         <div>
